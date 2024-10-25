@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c3dbd9f3;
+}
+
+/*pseudoelemento aplicado ao h1 adcionando elemento antes*/
+
+h1::before{
+    content: "Tema: ";
+    font-weight: 900;
+    color: #5a0000;
+}
+h1{
+    color: #17a390;
+}
+h1, p, h2, h3{
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+} 
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #004343;
+    margin: 2px;
+}
+
+nav ul li{
+    margin: 0 10px;
+}
+
+nav ul li a{
+    color: #d6fcf8;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+nav ul li a:hover{
+    color: #078274;
+    background-color: #5a0000;
+  
+}
+nav ul li a:active{
+    color:#000000;
+    background-color: rgb(218, 118, 231);
+}
+
+nav ul li a:visited{
+     color: #a2f9f1;
+   
+}
+
+p::first-letter{
+    font-size: 1.6rem;
+}
+
+
+img{
+    height: 250px;
+    width: 400px;
+    border-radius: 5%;
+   
+}
+
+p{
+    text-align: center;
+    margin: 10px;
+    padding: 5%;
+}
+h2{
+    color: #5a0000;
+}
+
+h3{
+    color: #004343;
+}
+div{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+div img{
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px;
+   margin-left: 45px;
+ }
+
+ div p{
+    text-align: justify;
+    margin-right: 70px;
+ }
+ hr{
+   border-color: #119898;
+ }
+
+ @media (max-width: 430px) {
+    div {
+        display: flow-root;
+    }
+
+    div p{
+        font-size: 1rem;
+        padding: 10px;
+        margin: 9px;
+    }
+    div img{
+        width: 220px;
+        height: 170px;
+
+    }
+    
+ }
+
+ @media (max-width: 320px) {
+    div {
+        display: flow-root;
+    }
+
+    div p{
+        font-size: 1rem;
+        padding: 10px;
+        margin: 9px;
+    }
+    div img{
+        width: 200px;
+        height: 150px;
+
+    }
+    
+ }
